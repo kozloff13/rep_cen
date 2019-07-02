@@ -6,11 +6,14 @@ import com.technoir.repcen.domain.User;
 import com.technoir.repcen.repository.UserRepository;
 import com.technoir.repcen.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collections;
 
-@Service
+@Component
+@Transactional
 public class UserServiceImpl implements UserService {
 
     @Autowired
