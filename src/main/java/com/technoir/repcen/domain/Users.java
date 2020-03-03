@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Table(schema = "public")
 @Data
 @NoArgsConstructor
-public class User {
+public class Users {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
